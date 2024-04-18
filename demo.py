@@ -39,7 +39,7 @@ import config
 import data
 import utils
 from keras_layer_normalization import LayerNormalization
-from resnet import resnet as caffe_resnet
+# from resnet import resnet as caffe_resnet
 
 """# Wrote custom functions to process input to the neural network"""
 
@@ -72,7 +72,7 @@ class Net(nn.Module):
     '''
     def __init__(self):
         super(Net, self).__init__()
-        self.model = caffe_resnet.resnet152(pretrained=True)
+        self.model = models.resnet152(pretrained=True)
 
         def save_output(module, input, output):
             self.buffer = output
