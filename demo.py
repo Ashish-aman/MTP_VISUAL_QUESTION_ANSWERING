@@ -38,6 +38,7 @@ import torchvision.models as models
 import config
 import data
 import utils
+from keras_layer_normalization import LayerNormalization
 from resnet import resnet as caffe_resnet
 
 """# Wrote custom functions to process input to the neural network"""
