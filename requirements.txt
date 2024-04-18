@@ -8,3 +8,4 @@ h5py
 resnet
 tensorflow
 keras
+keras-layer-normalization
