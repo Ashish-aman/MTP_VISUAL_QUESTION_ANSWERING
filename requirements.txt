@@ -10,3 +10,4 @@ tensorflow
 keras-layer-normalization
 keras
 matplotlib
+skimage
