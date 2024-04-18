@@ -3,3 +3,4 @@ pillow
 streamlit
 torch
 torchvision
+tqdm
