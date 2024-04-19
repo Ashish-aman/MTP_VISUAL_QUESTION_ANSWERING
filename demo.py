@@ -117,18 +117,18 @@ def demo(img_path,question):
     print('The Question asked was: ',question)
     cudnn.benchmark = True
     # Load pre-trained image
-    import gdown
+    # import gdown
 
-    # Define the Google Drive file URL and destination path
-    file_url = 'https://drive.google.com/uc?id=1M2Kv5P3yLI_6njU4YZQCz6GDLAw792wz'
+    # # Define the Google Drive file URL and destination path
+    # file_url = 'https://drive.google.com/uc?id=1M2Kv5P3yLI_6njU4YZQCz6GDLAw792wz'
     
-    # Download the file
-    file_contents = gdown.download(file_url, quiet=False)
+    # # Download the file
+    # file_contents = gdown.download(file_url, quiet=False)
     
-    # Print the contents to verify
-    print(file_contents)
+    # # Print the contents to verify
+    # print(file_contents)
 
-    log = torch.load('file_contents', map_location=torch.device('cpu'))
+    log = torch.load('50epoch.pth')
 
     tokens = len(log['vocab']['question']) + 1
     net = model.Net(tokens)
